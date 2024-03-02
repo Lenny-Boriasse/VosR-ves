@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="ACTION PROFESSIONNELLE 2" company="VOS REVES" webLink="" view-date="2023-09-02" view-index="0" gantt-divider-location="621" resource-divider-location="405" version="3.2.3230" locale="fr_FR">
+    <description>
+        <![CDATA[Gestion de différents éléments d'infrastructure de la société Vos Rêves qui propose des voyages aux USA et en Polynésie.]]>
+    </description>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="394" order="0"/>
+        <field id="tpd4" name="Date de début" width="105" order="1"/>
+        <field id="tpd5" name="Date de fin" width="106" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[29,24,19]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#ff66cc #ff66ff #0000cc #000099 #00ff66 #ffff00 #00ffff #666666 #cc0000 #00ffcc]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="222" order="0"/>
+        <field id="1" name="Rôle par défaut" width="179" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Aucun">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="1" tue="0" wed="1" thu="1" fri="1" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2021" month="10" date="26" type="HOLIDAY"/>
+        <date year="2021" month="11" date="2" type="HOLIDAY"/>
+        <date year="2021" month="12" date="21" type="HOLIDAY"/>
+        <date year="2021" month="12" date="28" type="HOLIDAY"/>
+        <date year="2023" month="10" date="24" type="HOLIDAY">
+            <![CDATA[Vacances sur 24/10/23 00:00]]>
+        </date>
+        <date year="2023" month="10" date="31" type="HOLIDAY">
+            <![CDATA[Vacances sur 31/10/23 00:00]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="61" name="Mission 1 : Recherche de STA adaptée aux besoins des nouveaux commerciaux" color="#00ffff" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2023-10-10" duration="8" complete="0" thirdDate="2023-08-15" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Présentation des besoins en STA d'un commercial" color="#00ffff" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2023-10-10" duration="1" complete="0" thirdDate="2021-10-05" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="48" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="48" name="Configuration idéal pour un STA performant pour le travail de commerciaux" color="#00ffff" meeting="false" start="2023-10-17" duration="1" complete="0" thirdDate="2023-10-10" thirdDate-constraint="0" expand="true">
+            <depend id="49" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="49" name="Présentation de 3 STA" color="#00ffff" meeting="false" start="2023-11-07" duration="2" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="50" name="Liste des logiciels qui devront petre installés sur la STA" color="#00ffff" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="51" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="51" name="Eléments de configuratiin et de paramétrage" color="#00ffff" meeting="false" start="2023-11-28" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="52" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="52" name="Procédure de préparation d'un poste avant livraison au commercial" color="#00ffff" meeting="false" start="2023-12-05" duration="2" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="62" name="Mission 2 : Renouvellement du parc d'imprimantes" color="#ffff00" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2023-10-10" duration="8" complete="0" thirdDate="2023-08-15" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Présentation de l'étude des imprimantes" color="#ffff00" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2023-10-10" duration="1" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" expand="true">
+            <depend id="53" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="53" name="Recherche 3 propositions commerciales professionnelles pour des imprimantes laser couleur" color="#ffff00" meeting="false" start="2023-10-17" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="54" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="54" name="Recherche 3 propositions avec des imprimantes jet d'encre couleur" color="#ffff00" meeting="false" start="2023-11-07" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="55" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="55" name="Maquette du formulaire de saisi consommable et explication fonctionnement" color="#ffff00" meeting="false" start="2023-11-14" duration="2" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="56" name="Maquette du formulaire de saisi pour une imprimante et ses 4 consommable avec explication fonctionnement" color="#ffff00" meeting="false" start="2023-11-28" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="57" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="57" name="Mise en oeuvre sous excel des 2 formulaires" color="#ffff00" meeting="false" start="2023-12-05" duration="2" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true"/>
+        <task id="63" name="Mission 3 : Expression des besoins et conception d'un protoype" color="#00ff66" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2023-10-10" duration="8" complete="0" thirdDate="2023-08-15" thirdDate-constraint="0" expand="true"/>
+        <task id="45" name="Rédaction des besoins des commerciaux" color="#00ff66" meeting="false" start="2023-10-10" duration="1" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="58" name="Création de la maquette" color="#00ff66" meeting="false" start="2023-10-17" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" expand="true">
+            <depend id="42" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="42" name="Expression des besoins pour la gestion des frais" color="#00ff66" meeting="false" start="2023-11-07" duration="1" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="47" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="47" name="Réalisation du prototype de gestion des frais" color="#00ff66" meeting="false" start="2023-11-14" duration="1" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="59" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="59" name="Réalisation de la base de donnée" color="#00ff66" meeting="false" start="2023-11-21" duration="1" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="60" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="60" name="Réalisation d'un prototype d'application" color="#00ff66" meeting="false" start="2023-11-28" duration="3" complete="0" thirdDate="2023-09-05" thirdDate-constraint="0" priority="4" expand="true"/>
+        <task id="64" name="Mission 4 : La protection du système d'information de l'entreprise" color="#0000cc" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2023-10-10" duration="8" complete="0" thirdDate="2023-08-15" thirdDate-constraint="0" expand="true"/>
+        <task id="24" name="Présentation du scénario attaques, risques et protections" color="#0000cc" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2023-10-10" duration="3" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="29" name="Présentation d'une charte informatique" color="#0000cc" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2023-11-14" duration="5" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" priority="4" expand="true"/>
+        <task id="65" name="Mission 5 : La mise en oeuvre d'un outil de gestion de projet" color="#ff66cc" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2023-10-10" duration="8" complete="0" thirdDate="2023-08-15" thirdDate-constraint="0" expand="true"/>
+        <task id="31" name="Gestion du suivi de projet" color="#ff66cc" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2023-10-10" duration="8" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" expand="true"/>
+        <task id="34" name="Rendu final en fin de séance" color="#666666" meeting="false" start="2023-12-12" duration="1" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" expand="true">
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="36" name="Présentation devant jury" color="#666666" meeting="false" start="2023-12-19" duration="1" complete="0" thirdDate="2021-09-28" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="BORIASSE Lenny" function="4" contacts="2025-SIO.BORIASSE-L@algoudlaffemas.fr" phone=""/>
+        <resource id="1" name="PERUS Maxence" function="Default:1" contacts="2024-SIO.PERUS-M@algoudlaffemas.fr" phone=""/>
+        <resource id="2" name="FAURE Théo" function="5" contacts="2025-SIO.FAURE-T@algoudlaffemas.fr" phone=""/>
+        <resource id="4" name="MOKHTARI Yasser" function="2" contacts="2025-SIO.MOKHTARI-Y@algoudlaffemas.fr" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="31" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="0" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="61" resource-id="0" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="47" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="58" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="60" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="63" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="29" resource-id="2" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="2" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="2" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="2" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="64" resource-id="2" function="5" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="53" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="54" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="36" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="62" resource-id="4" function="2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="ETUDE MATERIELLE"/>
+        <role id="2" name="ANALYSE FONCTIONNELLE"/>
+        <role id="3" name="DEVELOPPEMENT EXCEL"/>
+        <role id="4" name="COMMUNICATION ECRITE"/>
+        <role id="5" name="PRESENTATION ORALE"/>
+    </roles>
+</project>

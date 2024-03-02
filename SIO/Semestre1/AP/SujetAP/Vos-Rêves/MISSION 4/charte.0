@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style_vosreves.css" />
+    <title>Charte Informatique de Vos Rêves</title>
+    <style type="text/css">
+        body {
+            background-image: url('Image_charte/plage_palmier.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        #container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 70px;
+            margin: 80px;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        #signatureFixed {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        #signatureCanvas {
+            border: 2px solid #000;
+            margin-top: 20px; /* Augmente la marge */
+            margin-bottom: 20px; /* Augmente la marge */
+            cursor: crosshair;
+        }
+
+        #validerBtn,
+        #resetBtn {
+            margin-top: 10px; /* Augmente la marge */
+            padding: 12px; /* Augmente la taille */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #resetBtn {
+            background-color: #f44336; /* Mettre le bouton en rouge */
+        }
+
+        #Signature {
+            font-size: 16px;
+            font-style: italic;
+            margin-top: 10px;
+            display: block; 
+        }
+
+        #lieuInput,
+        #dateInput {
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #charteSection {
+            margin-top: 20px;
+        }
+
+        #acceptationSection {
+            margin-top: 100px;
+
+        }
+
+        #signatureSection {
+            text-align: center; 
+        }
+
+        #signatureImg {
+            max-width: 200px; 
+            max-height: 200px; 
+            margin-top: 20px; 
+            margin-right: 20px; 
+        }
+
+        #buttonsContainer {
+            margin-top: 20px; /* Augmente la marge */
+        }
+
+        #buttonsContainer button {
+            margin-right: 10px; /* Ajout de marge entre les boutons */
+        }$
+
+        #imprimerBtn {
+            padding: 35px; /* Augmente la taille du bouton */
+        }
+
+
+        @media print {
+    #imprimerBtn,
+    #validerBtn,
+    #resetBtn,
+    #lieuInput,
+    #dateInput,
+    #SignatureText {
+        display: none;
+    }
+
+}
+
+
+    
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Charte Informatique de Vos Rêves</h1>
+
+        <p><strong>Préambule :</strong><br>
+            La présente Charte Informatique a pour objet de définir les règles d'utilisation et de sécurité des systèmes
+            informatiques au sein de la société Vos Rêves. Chaque utilisateur, qu'il soit employé ou prestataire, est
+            tenu de respecter ces règles afin d'assurer la confidentialité, l'intégrité et la disponibilité des données,
+            ainsi que la sécurité des systèmes d'information.</p>
+
+        <h2>1. Utilisation des équipements informatiques :</h2>
+
+        <h3>1.1. Les équipements informatiques de la société</h3>
+        <p>Tels que les ordinateurs, les imprimantes, et les dispositifs d'accès, sont la propriété de Vos Rêves et doivent
+            être utilisés uniquement à des fins professionnelles.</p>
+
+        <h3>1.2. Attribution d'équipement spécifique</h3>
+        <p>Chaque employé se voit attribuer un équipement spécifique qui ne doit en aucun cas être prêté, partagé ou
+            utilisé par une tierce personne sans autorisation préalable.</p>
+
+        <h3>1.3. Utilisation responsable des équipements mobiles</h3>
+        <p>Les équipements mobiles fournis aux commerciaux itinérants doivent être utilisés de manière responsable et
+            conformément aux directives de sécurité établies par le service informatique.</p>
+
+        <h2>2. Gestion et sécurité des données :</h2>
+
+        <h3>2.1. Toutes les données professionnelles</h3>
+        <p>Sont la propriété exclusive de Vos Rêves. Les employés sont tenus de respecter la confidentialité des
+            informations et de ne pas divulguer, partager ou utiliser les données de manière non autorisée.</p>
+
+        <h3>2.2. Sauvegardes régulières des données</h3>
+        <p>Chaque employé est responsable de sauvegarder ses données conformément aux procédures définies par le
+            service informatique.</p>
+
+        <h3>2.3. Sécurité des mots de passe</h3>
+        <p>Les mots de passe doivent être robustes, changés périodiquement, et ne doivent en aucun cas être partagés avec
+            des tiers.</p>
+
+        <h2>3. Sécurité des systèmes d'information :</h2>
+
+        <h3>3.1. Signalement d'activité suspecte</h3>
+        <p>Tout employé doit signaler immédiatement toute activité suspecte, tout accès non autorisé ou toute
+            violation de la sécurité à l'administrateur du Système Informatique.</p>
+
+        <h3>3.2. Interdiction d'utilisation de logiciels non autorisés</h3>
+        <p>Le contournement des mesures de sécurité, ou toute tentative de compromission du système sont strictement
+            interdits.</p>
+
+        <h3>3.3. Formation à la sécurité informatique</h3>
+        <p>Les employés sont tenus de suivre les formations de sécurité informatique proposées par la société.</p>
+
+        <h2>4. Utilisation des services de messagerie :</h2>
+
+        <h3>4.1. Usage professionnel des comptes de messagerie</h3>
+        <p>Les comptes de messagerie sont destinés à un usage professionnel uniquement. Les employés doivent éviter
+            d'utiliser les adresses de messagerie professionnelles pour des communications personnelles.</p>
+
+        <h3>4.2. Vérification des pièces jointes et liens</h3>
+        <p>Dans les courriels doivent être effectuées attentivement afin de prévenir tout risque de sécurité.</p>
+
+        <h2>5. Matériels et équipements :</h2>
+
+        <h3>5.1. Signalement d'équipement endommagé</h3>
+        <p>Tout matériel endommagé ou défectueux doit être signalé immédiatement au service informatique.</p>
+
+        <h3>5.2. Utilisation prudente des équipements mobiles</h3>
+        <p>Les équipements mobiles doivent être utilisés avec précaution pour éviter tout dommage.</p>
+
+        <p><strong>La non-conformité à cette Charte Informatique peut entraîner des sanctions disciplinaires pouvant aller
+                jusqu'à la résiliation du contrat de travail. Chaque utilisateur est responsable de la sécurité des
+                systèmes d'information de Vos Rêves.</strong></p>
+        
+
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <h2>Retrouvez à la page suivante la signature à réaliser. </h2>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+        <br> </br>
+
+        
+
+        <div id="acceptationSection">
+            <h2>Acceptation des Conditions :</h2>
+            <div>
+           <br><p id="Signature">Cette section est dédiée à votre signature de la Charte.</p> </br>
+
+                <label for="accepterConditions">J'accepte les conditions de la Charte :</label>
+                <input type="checkbox" id="accepterConditions">
+            </div>
+        </div>
+
+        <div id="signatureSection">
+            <canvas id="signatureCanvas" width="400" height="200"></canvas>
+            <div id="buttonsContainer">
+                <button id="validerBtn">Valider</button>
+                <button id="resetBtn">Recommencer</button>
+         </div>
+        </div>
+
+        <div>
+            <label for="lieuInput">Fait à </label>
+            <input type="text" id="lieuInput" placeholder="Lieu">
+            <label for="dateInput"> le </label>
+            <input type="text" id="dateInput" placeholder="Date">
+        </div>
+
+        <p id="SignatureText" class="SignatureText"></p>
+        <p>Société "Vos Rêves"</p>
+        <p>Signature du Responsable Informatique Monsieur Dupont:</p>
+        <img id="signatureImg" src="Image_charte/signature_fixe.jpg" alt="Signature du Responsable Informatique">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var canvas = document.getElementById('signatureCanvas');
+            var context = canvas.getContext('2d');
+            var isDrawing = false;
+            var isSignatureValidated = false;
+
+            canvas.addEventListener('mousedown', function (e) {
+                if (!isSignatureValidated) {
+                    isDrawing = true;
+                    draw(e);
+                }
+            });
+
+            canvas.addEventListener('mousemove', function (e) {
+                if (isDrawing) {
+                    draw(e);
+                }
+            });
+
+            canvas.addEventListener('mouseup', function () {
+                isDrawing = false;
+                context.beginPath();
+            });
+
+            function draw(e) {
+                if (!isSignatureValidated) {
+                    context.lineWidth = 2;
+                    context.lineCap = 'round';
+                    context.strokeStyle = '#000';
+
+                    context.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+                    context.stroke();
+                    context.beginPath();
+                    context.moveTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+                }
+            }
+
+            var validerBtn = document.getElementById('validerBtn');
+            validerBtn.addEventListener('click', function () {
+                var accepterConditions = document.getElementById('accepterConditions');
+
+                if (accepterConditions.checked) {
+                    isSignatureValidated = true;
+                    alert('Signature validée !');
+                    // Désactiver les événements liés à la signature après validation
+                    canvas.removeEventListener('mousedown');
+                    canvas.removeEventListener('mousemove');
+                    canvas.removeEventListener('mouseup');
+                } else {
+                    alert('Veuillez accepter les conditions de la Charte.');
+                }
+            });
+
+            var resetBtn = document.getElementById('resetBtn');
+            resetBtn.addEventListener('click', function () {
+                if (!isSignatureValidated) {
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            });
+
+            var lieuInput = document.getElementById('lieuInput');
+            var dateInput = document.getElementById('dateInput');
+            var signatureText = document.getElementById('SignatureText');
+
+            lieuInput.addEventListener('input', function () {
+                signatureText.innerText = `Fait à ${lieuInput.value}, le ${dateInput.value}`;
+            });
+
+            dateInput.addEventListener('input', function () {
+                signatureText.innerText = `Fait à ${lieuInput.value}, le ${dateInput.value}`;
+            });
+
+
+             var imprimerBtn = document.createElement('button');
+        imprimerBtn.textContent = 'Imprimer la charte';
+        imprimerBtn.id = 'imprimerBtn';
+        imprimerBtn.addEventListener('click', function () {
+            // Masquer le bouton imprimer une fois qu'il est pressé
+            imprimerBtn.style.display = 'none';
+
+            // Masquer le bouton Valider et Recommencer
+            validerBtn.style.display = 'none';
+            resetBtn.style.display = 'none';
+
+            // Remplacer le texte "Fait à le" lors de l'impression
+            var lieuInput = document.getElementById('lieuInput');
+            var dateInput = document.getElementById('dateInput');
+            var signatureText = document.getElementById('SignatureText');
+            var originalText = signatureText.innerText;
+            signatureText.innerText = `Fait à ${lieuInput.value}, le ${dateInput.value}`;
+
+            // Afficher seulement le lieu et la date lors de l'impression
+            var lieuDatePrint = document.createElement('p');
+            lieuDatePrint.innerText = `${lieuInput.value}, le ${dateInput.value}`;
+            lieuDatePrint.className = 'SignatureText';
+            document.getElementById('container').appendChild(lieuDatePrint);
+
+            // Appeler la fonction d'impression après un court délai pour permettre le rendu des modifications
+            setTimeout(function () {
+                window.print();
+                // Restaurer le texte original après l'impression
+                signatureText.innerText = originalText;
+                // Supprimer l'élément ajouté après l'impression
+                imprimerBtn.style.display = 'block';
+                validerBtn.style.display = 'block';
+                resetBtn.style.display = 'block';   
+            }, 100);
+        });
+
+
+                document.getElementById('container').appendChild(document.createElement('br'));
+                document.getElementById('container').appendChild(imprimerBtn);
+
+        });
+    </script>
+</body>
+
+</html>

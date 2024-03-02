@@ -1,0 +1,331 @@
+/*
+
+    1. HEADER
+    2. FOOTER
+    3. CONNEXION
+    4. ACCUEIL
+    5. FORMULAIRE
+    6. ACCUEIL_ADMIN
+
+*/
+
+/* GENERAL */
+body {
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    transform: translateY(-30);
+    animation: apparition .8s .1s ease-out forwards;
+}
+
+@keyframes apparition {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+    padding: 4px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: transform .50s;
+    border: solid 1px #74747490;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: #74747490;
+    color: white;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border: solid 1px #74747490;
+    transition: transform .50s;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: .50s;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    color: #525252;
+}
+
+/* POLICES */
+
+#header-police {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+#Grand-Titre {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+#Paragraphe {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+#Commentaire {
+    color: gray;
+    font-size: 12px;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+}
+
+#BDD-ERREUR {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* LIGNES SÉPARATRICE :
+
+METTRE VALEURS ESPACEMENT HAUT BAS
+style="margin-top: px; margin-bottom: px; border: solid 2px ;" 
+*/
+
+#ligne-horizontal {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 1. HEADER */
+
+#header-container {
+    background-color: black;
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+}
+
+#header-left a img {
+    border-radius: 50%;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+    transition: transform .50s;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+}
+
+#header-right form button {
+    border: none;
+}
+
+#header-right a,
+#header-right form button,
+#header-right form button i {
+    transition: transform .50s;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    display: flex;
+}
+
+#header-left a img:hover,
+#header-right a:hover,
+#header-right form button:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.469);
+    transition: .50s;
+}
+
+/* 2. FOOTER */
+
+#footer-container-1 {
+    background-color: black;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* 3. CONNEXION */
+
+#connexion-header {
+    background-color: black;
+    height: auto;
+    width: auto;
+    padding: 50px;
+}
+
+#connexion-container-1 {
+    border: solid rgba(142, 142, 142, 0.8) 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    min-height: 200px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+#connexion-container-1 img {
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#connexion-container-1 p {
+    color: black;
+    background-color: none;
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+/* 4. ACCUEIL */
+
+#accueil-container-1 {
+    border: solid 2px black;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    padding: 25px;
+    justify-content: center;
+}
+
+#accueil-infos-emp {
+    margin: 10px;
+    padding: 5px;
+    border: solid 1 px rgba(142, 142, 142, 0.8);
+    border-radius: 10px;
+}
+
+#accueil-infos-emp img {
+    border-radius: 100px;
+    border: solid 2px black;
+    height: auto;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#accueil-container-frais {
+}
+
+
+#accueil-liste-frais {
+    margin-left: 30px;
+}
+
+/* 5. FORMULAIRE */
+
+#formulaire-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#formulaire-container-box {
+    border: solid 2px black;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 20px;
+    padding: 15px;
+    justify-content: center;
+}
+
+#formulaire-ligne {
+    display: flex;
+    justify-content: center;
+}
+
+#formulaire-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+#formulaire-euro-symbol {
+    color: #525252;
+}
+
+#formulaire-container-montant {
+    display: flex;
+    color: #525252;
+}
+
+#formulaire-required {
+    color: red;
+}
+
+#formulaire-reset-btn {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: solid 2px red;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    pointer-events: all;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    transition: transform .50s;
+}
+
+#formulaire-submit-btn {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: solid 2px blue;
+    background-color: blue;
+    color: white;
+    font-size: medium;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    transition: transform .50s;
+}
+
+#formulaire-reset-btn:hover,
+#formulaire-submit-btn:hover {
+    transform: scale(1.1);
+    transition: .50s;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,22 @@
+INSERT INTO EMPLOYE (Nom_emp, Prenom_emp, Login_emp, Pass_emp, Admin_emp) VALUES
+('PERUS', 'Maxence', 'MPERUS', '3001', TRUE),
+('MOKHTARI', 'Yasser', 'YMOKHTARI', '1312', FALSE),
+('RIEDEL', 'Jean-Maxime', 'JRIEDEL', '1000', FALSE),
+('DROGUE', 'Bruno', 'BDROGUE', '2000', FALSE);
+
+INSERT INTO TYPE_FRAIS (lib_frais) VALUES
+('Hôtel'),
+('Restaurant'),
+('Carburant'),
+('Péage');
+
+INSERT INTO ETAT_FRAIS (lib_etat) VALUES
+('ATTENTE'),
+('REMBOURSER'),
+('REFUSÉE');
+
+INSERT INTO FRAIS (ID_type_frais, Descriptif_frais, Date_frais, ID_etat_frais, Montant_frais, ID_emp) VALUES
+(2, 'Repas Burger King', '2023-11-02', 1, 25.00, 1),
+(1, 'Hotel Ibis Budget', '2023-11-14', 2, 18.00, 2),
+(3, 'Déplacement Ecole', '2023-11-09', 3, 15.00, 3),
+(4, 'Péage Valence', '2023-11-13', 1, 8.50, 4);
